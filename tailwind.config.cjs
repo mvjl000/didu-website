@@ -9,7 +9,8 @@ module.exports = {
 			}
 		},
 		fontFamily: {
-			Odibee: ["'Odibee Sans', cursive"]
+			Odibee: ["'Odibee Sans', cursive"],
+			Roboto: ["'Roboto Condensed', sans-serif"]
 		},
 		screens: {
 			tablet: '768px',
