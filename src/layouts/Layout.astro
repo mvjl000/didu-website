@@ -1,4 +1,6 @@
 ---
+	import logoImage from '../images/didu-logo.svg';
+
 	export interface Props {
 		title: string;
 	}
@@ -27,7 +29,7 @@
 
 <body class="min-h-screen relative">
 	<header class='flex justify-center w-full py-2 tablet:justify-start tablet:px-7 desktop:px-9'>
-		<img src="../../public/svg/didu-logo.svg" alt="didu logo" />
+		<img src={logoImage} alt="didu logo" />
 	</header>
 	<main class="w-full my-4 px-4 tablet:px-10 desktop:px-12 relative">
 		<slot />
