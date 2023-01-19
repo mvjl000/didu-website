@@ -21,24 +21,24 @@
 	<title>{title}</title>
 </head>
 
-<body>
-	<slot />
+<body class="min-h-screen">
+	<header class='flex justify-center w-full py-2 tablet:justify-start tablet:px-7 desktop:px-9'>
+		<img src="../../public/svg/didu-logo.svg" alt="didu logo" />
+	</header>
+	<main class="my-4 px-4 tablet:px-10 desktop:px-12">
+		<slot />
+	</main>
 </body>
 
 </html>
+
 <style is:global>
-	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-	}
-
 	html {
-		font-family: system-ui, sans-serif;
-		background-color: #F6F6F6;
+		font-family: 'Roboto Condensed', sans-serif;
+		background-color: #FFFFFF;
 	}
 
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
+	* {
+		box-sizing: border-box;
 	}
 </style>
