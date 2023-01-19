@@ -14,24 +14,28 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
-	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<link rel="icon" type="image/svg+xml" href="/svg/didu-favicon.svg" />
 	<meta name="generator" content={Astro.generator} />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Roboto+Condensed:wght@300;400&display=swap"
 		rel="stylesheet">
+	<meta name="description"
+		content="Didu. Mobile app to streamline household chores. Currently under development. Available soon.">
 	<title>{title}</title>
 </head>
 
-<body class="min-h-screen">
+<body class="min-h-screen relative">
 	<header class='flex justify-center w-full py-2 tablet:justify-start tablet:px-7 desktop:px-9'>
 		<img src="../../public/svg/didu-logo.svg" alt="didu logo" />
 	</header>
 	<main class="w-full my-4 px-4 tablet:px-10 desktop:px-12 relative">
 		<slot />
-		<p>Copyright &#169; <a href="https://mpiskadlo.com/" class="underline hover:text-yellow-primary">Miłosz
-				Piskadło</a> {year}</p>
 	</main>
+	<p class="px-2 pb-3 absolute left-0 bottom-0">Copyright &#169;
+		<a href="https://mpiskadlo.com/" class="underline hover:text-yellow-primary">Miłosz Piskadło</a>
+		{year}
+	</p>
 </body>
 
 </html>
