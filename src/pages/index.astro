@@ -1,8 +1,36 @@
 ---
 	import Layout from '../layouts/Layout.astro';
-	import Card from '../components/Card.astro';
+
+	const listItemClass = 'font-medium text-3xl relative before:-z-10 before:absolute before:bottom-1 before:left-0 before:w-full before:bg-yellow-primary tablet:text-4xl';
 ---
 
 <Layout title="didu">
-	<h1 class='text-6xl font-Odibee'>Welcome to <span class="text-yellow-primary">Didu</span></h1>
+	<section class="relative mt-6 flex flex-col desktop:flex-row">
+		<div class="flex flex-col items-start">
+			<h1 class="font-light text-5xl leading-tight max-w-xl tablet:text-6xl">Take household
+				<span
+					class="font-medium inline-block relative before:-z-10 before:absolute before:bottom-[10px] before:left-0 before:w-full before:h-2.5 before:bg-yellow-primary tablet:before:h-3 tablet:before:bottom-[5px]">chores</span>
+				to a new level.
+			</h1>
+			<ul class="self-center mt-16 flex flex-col items-center gap-4 tablet:mt-20 desktop:self-start">
+				<li class={`${listItemClass} before:h-2 before:-skew-y-3 -translate-x-12`}>Less effort</li>
+				<li class={`${listItemClass} before:h-3 before:-skew-y-2`}>Faster communication</li>
+				<li class={`${listItemClass} before:h-4 before:skew-y-3 translate-x-10`}>Always done</li>
+			</ul>
+		</div>
+		<img src="../../public/svg/blobls/blob-stroke-1.svg" alt="Abstract shape"
+			class="absolute inset-0 -z-10 translate-x-[140px] tablet:translate-x-[10px] desktop:translate-x-[40vw] desktop:-translate-y-[90px]" />
+		<img src="../../public/svg/blobls/blob-stroke-2.svg" alt="Abstract shape"
+			class="absolute inset-0 -z-10 -translate-x-[80px] translate-y-[400px] desktop:translate-x-[35vw] desktop:translate-y-[200px]" />
+		<div
+			class="mt-16 mx-auto max-w-xs flex flex-col gap-[20px] skew-y-6 tablet:mt-20 tablet:max-w-sm desktop:max-w-none desktop:w-[400px]">
+			<img src="../../public/svg/ui/task-1.svg" alt="Task example"
+				class="animate-wiggling -translate-x-2 desktop:-translate-x-4" />
+			<img src="../../public/svg/ui/task-2.svg" alt="Task example"
+				class="animate-wiggling-delayed translate-x-2 desktop:translate-x-4" />
+		</div>
+	</section>
+	<div class="mt-32 desktop:mt-40 mb-5">
+		<p class='text-2xl text-center font-light tablet:text-3xl desktop:text-4xl'>Currently under development</p>
+	</div>
 </Layout>
